@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "407908344083",
+    "firebase_url": "https://trip-9547b.firebaseio.com",
+    "project_id": "trip-9547b",
+    "storage_bucket": "trip-9547b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407908344083:android:d7e4bbfc31bce87c",
+        "android_client_info": {
+          "package_name": "com.example.rhkdg.sharethetrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407908344083-ce1qcdm6cttgb09ocurm3prhvuafnho4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rhkdg.sharethetrip",
+            "certificate_hash": "800b2e4979d9e327728f317ac33d13dbc726fb69"
+          }
+        },
+        {
+          "client_id": "407908344083-ci8np6foaiqr52ja5s7sqdn5qgn9f10a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQcz7F5EStD-Bv7A4BC4fvzKH_PyyOCGI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407908344083-ci8np6foaiqr52ja5s7sqdn5qgn9f10a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

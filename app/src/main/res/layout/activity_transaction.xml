@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransactionActivity">
+    
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tabs1"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#28418d"
+                android:text="   구매 정보"
+                android:gravity="center_vertical"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/seqence"
+                android:layout_below="@id/tabs1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/transaction1"/>
+
+            <LinearLayout
+                android:id="@+id/linea1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:layout_below="@id/seqence"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="50dp">
+
+                <TextView
+                    android:id="@+id/cus"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#28418d"
+                    android:text="  Customer Information"
+                    android:gravity="center_vertical"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/profileimage_a"
+                        android:layout_width="60dp"
+                        android:layout_height="45dp"/>
+
+                    <TextView
+                        android:id="@+id/profileemail_a"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="45dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sel"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#28418d"
+                    android:text="  Guide Information"
+                    android:gravity="center_vertical"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/authorimage"
+                        android:layout_width="60dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_action_account_circle_40"/>
+
+                    <TextView
+                        android:id="@+id/taauthor"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="45dp" />
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/taTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center_vertical"
+                    android:text="Title"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textNation_a"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/iclocation2"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/postNation_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        tools:text="Nation" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textDate_a"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/iccalendar"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/postDate_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        tools:text="date" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textAddress_b"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/icwallet2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/postAddress_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        tools:text="Address"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tra"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#28418d"
+                    android:text="  Transaction Detail"
+                    android:gravity="center_vertical"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true">
+
+                        <TextView
+                            android:id="@+id/textAddress_a"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:gravity="right"
+                            android:background="@drawable/icwallet2" />
+
+                        <TextView
+                            android:id="@+id/postAddress_a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center_vertical"
+                            android:text="Select your wallet" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <Button
+                            android:id="@+id/btn_select_from1"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:background="#28418d"
+                            android:text="Select\nWallet"
+                            android:textColor="#fff"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true">
+
+                        <TextView
+                            android:id="@+id/checkvaluetext"
+                            android:layout_width="78dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="right"
+                            android:text="Balance : "
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/checkvalue"
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center_vertical"
+                            android:text="Push Check Button" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <Button
+                            android:id="@+id/checkvaluebtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="#28418d"
+                            android:text="Check\nValue"
+                            android:textColor="#fff"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <TextView
+                        android:id="@+id/escrowtext"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:text="Escrow"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/escrowaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textPrice_a"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Wei"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/postPrice_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        tools:text="Price" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/et_gas_pricegtext"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Gas\nPrice"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/et_gas_priceg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        tools:text="Price" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/et_gas_limittext"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Gas\nLimit"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/et_gas_limit1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        tools:text="Price" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/et_noncetext"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Nonce"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/et_nonce1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        tools:text="Price" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_mgs1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Transaction Message"/>
+
+                <Button
+                    android:id="@+id/escrowmanagerbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#28418d"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:text="송금하기"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/satisfactionbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#28418d"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:text="만족도평가"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
